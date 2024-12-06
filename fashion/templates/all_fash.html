@@ -1,0 +1,9 @@
+{% extends 'master.html'%}
+
+{% block title %} My Fashions {% endblock %}
+
+{% block content %}
+{% for x in myfashion %}
+<li><a href="details/{{ x.id }}">{{x.firstname }} {{x.lastname }}</a></li>
+{% endfor %}
+{% endblock %}

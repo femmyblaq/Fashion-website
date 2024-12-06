@@ -1,0 +1,10 @@
+{% extends 'master.html' %}
+
+{% block content %}
+<h1>{{ myfashion.firstname }} {{ myfashion.lastname }}</h1>
+  
+<p>Phone: {{ myfashion.phone }}</p>
+<p>Member since: {{ myfashion.joined_date }}</p>
+
+<p>Back to <a href="/fashion">Fashions</a></p>
+{% endblock %}
